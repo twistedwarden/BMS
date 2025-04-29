@@ -1,0 +1,41 @@
+===Database ecommerce_db
+
+== Table structure for table budget
+
+|------
+|Column|Type|Null|Default
+|------
+|//**budget_id**//|int(11)|No|
+|budget_name|varchar(255)|No|
+|department_id|int(11)|Yes|NULL
+|amount_allocated|decimal(15,2)|No|
+|amount_remaining|decimal(15,2)|No|
+|start_date|date|No|
+|end_date|date|No|
+|status|varchar(50)|No|
+== Dumping data for table budget
+
+== Table structure for table budget_history
+
+|------
+|Column|Type|Null|Default
+|------
+|//**history_id**//|int(11)|No|
+|budget_id|int(11)|Yes|NULL
+|description|text|No|
+|date|date|No|
+== Dumping data for table budget_history
+
+== Table structure for table department
+
+|------
+|Column|Type|Null|Default
+|------
+|//**department_id**//|int(11)|No|
+|department_name|varchar(255)|No|
+== Dumping data for table department
+
+|1|Human Resources
+|2|Logistics
+|3|Core Transactions
+|4|Financials
